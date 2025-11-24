@@ -32,7 +32,7 @@ Set up a Windows 10 virtual machine on Oracle VirtualBox to serve as a client ma
 
 3. **Attached Windows 10 ISO**  
    Storage → Optical Drive → Selected ISO  
-   ![ISO Attached](Week1_Screenshots/Win10_ISO_Attached.png)
+   
 
 4. **Started VM and Began Installation**  
    Followed Windows setup prompts (language, region, keyboard, etc.)  
