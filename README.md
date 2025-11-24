@@ -105,6 +105,9 @@ Set up a pre-installed Kali Linux virtual machine to practice penetration testin
 - `Kali_VM_Download.png`  
 - `Kali_VM_Imported.png`  
 - `Kali_Home_Screen.png`
+
+- ---
+
 ### Week 1: Windows Server 2025 Setup on VirtualBox
 
 **Objective**  
