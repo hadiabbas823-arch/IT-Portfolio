@@ -69,7 +69,4 @@ Set up a Windows 10 virtual machine on Oracle VirtualBox to serve as a client ma
 
 ---
 
-### Tips for GitHub / Resume
-- Organize screenshots in a folder like `/Week1`.
-- Include this README in the folder so recruiters see context.
-- Update weekly as you complete labs — a continuous portfolio shows hands-on growth.
+
