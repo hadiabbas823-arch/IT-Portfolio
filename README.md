@@ -105,5 +105,52 @@ Set up a pre-installed Kali Linux virtual machine to practice penetration testin
 - `Kali_VM_Download.png`  
 - `Kali_VM_Imported.png`  
 - `Kali_Home_Screen.png`
+### Week 1: Windows Server 2025 Setup on VirtualBox
+
+**Objective**  
+Set up a Windows Server 2025 (Standard Evaluation, Desktop Experience) VM to act as the Domain Controller for Active Directory and Group Policy labs.
+
+**System Configuration (Host & VM)**
+
+| Component       | Configuration |
+|-----------------|---------------|
+| Host OS         | Windows 11, 64-bit |
+| Processor       | AMD Ryzen 7 8845HS (8 cores @ 3.8 GHz) |
+| RAM             | 16 GB (Allocated 4–6 GB for VM) |
+| Disk            | 60 GB dynamically allocated |
+| Virtualization  | Oracle VirtualBox 7.x |
+| ISO             | Windows Server 2025 Standard Evaluation (Desktop Experience) |
+
+**Steps Completed**
+
+1. **Created New Windows Server VM**  
+   Name: `WinServer-DC`  
+   Type: Microsoft Windows → *Windows 2022 (64-bit)*  
+   RAM: 4096–6144 MB  
+   Disk: 60 GB (VDI, dynamically allocated)  
+   ![WinServer VM Config](WinServer_VM_Config.png)
+
+2. **Attached Server 2025 ISO**  
+   Storage → Optical Drive → Windows Server ISO  
+
+
+3. **Installed Windows Server 2025**  
+   Selected *Standard Evaluation (Desktop Experience)*  
+   Reached Server Manager dashboard.
+   ![WinServer Setup Screen](WinServer_Setup_Screen.png)
+
+**Observations**  
+- Server boots normally and Server Manager loads on login.  
+- 4–6 GB RAM is enough for AD DS labs.  
+- Desktop Experience is easier for GPO/AD administration.
+
+**Snapshot**  
+![Snapshot Clean Install](Week1_Screenshots/Snapshot_CleanInstall_WinServer.png)
+
+**Next Steps**  
+- Promote server to Domain Controller  
+- Install AD DS  
+- Create users, OUs, and groups  
+- Apply GPOs (USB disable, password policy, wallpaper)
 
 
