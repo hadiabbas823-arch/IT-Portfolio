@@ -1,14 +1,17 @@
 # IT-Portfolio
 Hands-on IT & Cybersecurity labs for portfolio and resume.
 
-[Download uploaded README](/mnt/data/README (1).md)
+
 
 ---
 
 ## Table of Contents
-- [Week 1: Windows 10 VM Setup](#week-1-windows-10-vm-setup-on-virtualbox)  
-- [Week 1: Kali Linux Setup](#week-1-kali-linux-vm-setup-on-virtualbox)  
-- [Week 1: Windows Server 2025 Setup](#week-1-windows-server-2025-setup-on-virtualbox)
+- [Week 1: Windows 10 VM Setup on VirtualBox](#week-1-windows-10-vm-setup-on-virtualbox)
+- [Week 1: Kali Linux VM Setup on VirtualBox](#week-1-kali-linux-vm-setup-on-virtualbox)
+- [Week 1: Windows Server 2025 Setup on VirtualBox](#week-1-windows-server-2025-setup-on-virtualbox)
+- [Active Directory Lab — Windows Server 2025 (Full Deployment)](#active-directory-lab-windows-server-2025-full-deployment)
+
+
 
 ---
 
@@ -172,6 +175,127 @@ Install Windows Server 2025 as a Domain Controller for Active Directory + GPO la
 - Crop & annotate screenshots for clarity when possible.
 
 ---
+
+# Active Directory Lab — Windows Server 2025 (Full Deployment)
+
+## Network Diagram
+
+       ┌───────────────────────────┐
+       │     Windows Server 2025    │
+       │            DC01            │
+       │  AD DS / DNS / DHCP        │
+       │  Static IP: 10.0.0.10       │
+       └──────────────┬────────────┘
+                      │ Internal Network
+       ┌──────────────┴────────────┐
+       │      Windows 10 Client     │
+       │          CLIENT1           │
+       │  DHCP IP from DC           │
+       │  Domain: MYDOMAIN.COM      │
+       └────────────────────────────┘
+**
+
+---
+
+
+---
+
+---
+
+## 1️⃣ Rename Server → DC  
+![DC](Week1_Screenshots/DC.png)
+
+---
+
+## 2️⃣ Configure Static Internal IP  
+![Internal IPv4](Week1_Screenshots/Internal%20ipv4.png)
+
+---
+
+## 3️⃣ Install Active Directory Domain Services (AD DS)
+![AD DS](Week1_Screenshots/AD%20DS.png)
+
+---
+
+## 4️⃣ AD DS Installation Completed
+![AD DS INSTALLED](Week1_Screenshots/AD%20DS%20INSTALLED.png) 
+
+---
+
+## 5️⃣ Domain Login (MYDOMAIN\Administrator)  
+![mydomain](Week1_Screenshots/mydomain.png)
+
+---
+
+## 6️⃣ Create New Domain Admin Account  
+![new domain account](Week1_Screenshots/new%20domain%20account.png)
+
+---
+
+## 7️⃣ Install DHCP Server  
+![dhcp server installing](Week1_Screenshots/dhcp%20server%20installing.png)
+
+---
+
+## 8️⃣ DNS Server Installed  
+![DNS SERVER](Week1_Screenshots/DNS%20SERVER.png)
+
+---
+
+## 9️⃣ Bulk User Creation (1000 Users via PowerShell ISE)  
+![USER CREATION](Week1_Screenshots/USER%20CREATION.png)
+
+---
+
+## 🔟 Windows 10 Client Setup (CLIENT1 Installed)  
+![client 1 win 10](Week1_Screenshots/client%201%20win%2010.png)
+
+---
+
+## 1️⃣1️⃣ Client Welcome Screen (After Domain Join)  
+![Welcome](Week1_Screenshots/wELCOME%20TO%20MY%20DOMAIN.png)
+
+---
+
+## 1️⃣2️⃣ DHCP + DNS Verification  
+
+### Check IP Configuration  
+![ipconfig](Week1_Screenshots/I%20config.png)
+
+### Ping Domain  
+![ping domain](Week1_Screenshots/ping%20mydomain%20.com.png)
+
+---
+
+## 1️⃣3️⃣ Join CLIENT1 to MYDOMAIN.COM  
+![CLIENT1](Week1_Screenshots/CLIENT1.png)
+
+---
+
+## 1️⃣4️⃣ DHCP Detects CLIENT1  
+![dhcp server c1](Week1_Screenshots/dhcp%20server%20c1.png)
+
+---
+
+## 1️⃣5️⃣ AD Confirms CLIENT1 + User Login Success  
+![ad c1](Week1_Screenshots/ad%20c1.png)  
+![login using created user](Week1_Screenshots/logging%20in%20using%20created%20user.png)
+
+---
+
+# 🎉 Lab Completed — Skills Demonstrated
+
+- Installed & configured **Windows Server 2025**
+- Deployed **AD DS, DNS, DHCP**
+- Created enterprise domain **MYDOMAIN.COM**
+- Automated **1000 user accounts** (PowerShell)
+- Joined Windows 10 client to domain
+- Verified DHCP leases, DNS resolution, domain login
+- Full enterprise-grade virtual environment
+
+---
+
+
 
 ## Contact / Links
 - GitHub: `https://github.com/hadiabbas823-arch/IT-Portfolio`  
