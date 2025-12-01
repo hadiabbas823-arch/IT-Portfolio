@@ -213,7 +213,7 @@ Install Windows Server 2025 as a Domain Controller for Active Directory + GPO la
 ---
 
 ## 3️⃣ Install Active Directory Domain Services (AD DS)
-![AD DS](Week1_Screenshots/AD%20DS.png)
+![AD DS](AD%20DS/AD_DS.png)
 
 ---
 
