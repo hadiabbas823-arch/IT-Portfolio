@@ -1,17 +1,69 @@
-# IT-Portfolio
-Hands-on IT & Cybersecurity labs for portfolio and resume.
+# 💻 IT & Cybersecurity Labs Portfolio
+
+Hands-on IT and Cybersecurity labs for portfolio and resume.  
+This repository demonstrates virtualization, Windows Server deployment, Active Directory, networking, and automation skills.
+
+---
+
+## 📌 Quick Overview
+
+| Lab / Topic | Description |
+|------------|-------------|
+| Windows 10 VM Setup | Create a client VM for Active Directory, ticketing, and networking labs. |
+| Kali Linux VM Setup | Deploy Kali Linux for penetration testing and cybersecurity exercises. |
+| Windows Server 2025 Setup | Install Server 2025 as Domain Controller, DNS, DHCP, AD DS, and GPO labs. |
+| Active Directory Full Deployment | Step-by-step AD lab: rename server, set static IP, install AD DS, create users, join clients, verify network services. |
+
+---
+
+## 🛠️ Technologies / Tools Used
+
+- VirtualBox 7.x (VM virtualization)  
+- Windows 10 & Windows Server 2025  
+- Kali Linux (prebuilt VM)  
+- Active Directory, DNS, DHCP  
+- PowerShell for bulk user automation  
+- Networking: internal IPs, domain join, DHCP/DNS verification  
+- Git & GitHub for version control  
+
+---
+
+## 📂 Table of Contents
+
+- [Week 1: Windows 10 VM Setup](#week-1-windows-10-vm-setup-on-virtualbox)  
+- [Week 1: Kali Linux VM Setup](#week-1-kali-linux-vm-setup-on-virtualbox)  
+- [Week 1: Windows Server 2025 Setup](#week-1-windows-server-2025-setup-on-virtualbox)  
+- [Active Directory Lab - Windows Server 2025 Full Deployment](#active-directory-lab---windows-server-2025-full-deployment)
+
 
 
 
 ---
 
-## Table of Contents
-- [Week 1: Windows 10 VM Setup on VirtualBox](#week-1-windows-10-vm-setup-on-virtualbox)
-- [Week 1: Kali Linux VM Setup on VirtualBox](#week-1-kali-linux-vm-setup-on-virtualbox)
-- [Week 1: Windows Server 2025 Setup on VirtualBox](#week-1-windows-server-2025-setup-on-virtualbox)
-- [Active Directory Lab — Windows Server 2025 (Full Deployment)](#active-directory-lab-windows-server-2025-full-deployment)
+## 🏆 Status / Badges
 
+| Lab | Status |
+|-----|--------|
+| Windows 10 VM Setup | ✅ Completed |
+| Kali Linux VM Setup | ✅ Completed |
+| Windows Server 2025 Setup | ✅ Completed |
+| Active Directory Full Deployment | ✅ Completed |
 
+---
+
+## ⚡ Notes
+
+- Screenshots included for all major steps.  
+- Use VirtualBox snapshots for safe rollbacks.  
+- All filenames and folders are standardized for consistency.  
+- Labs are reproducible with minimal setup (see each lab section for details).  
+
+---
+
+## 📎 Contact / Links
+
+- GitHub: [hadiabbas823-arch](https://github.com/hadiabbas823-arch/IT-Portfolio)  
+- Portfolio file (uploaded): `/mnt/data/README (1).md`  
 
 ---
 
@@ -176,7 +228,8 @@ Install Windows Server 2025 as a Domain Controller for Active Directory + GPO la
 
 ---
 
-# Active Directory Lab — Windows Server 2025 (Full Deployment)
+## Active Directory Lab - Windows Server 2025 Full Deployment
+
 
 ## Network Diagram
 
